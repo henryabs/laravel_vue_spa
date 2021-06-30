@@ -11,6 +11,8 @@
                         </div>
                     </div>
                 </div>
+                <ReviewList></ReviewList>
+
             </div>
             <div class="col-md-4 pb-4">
                 <Availability></Availability>
@@ -21,6 +23,7 @@
 
 <script>
 import Availability from './Availability';
+import ReviewList from './ReviewList';
 export default {
     data() {
         return {
@@ -38,7 +41,8 @@ export default {
         .catch(response => console.log('Error'));
     },
     components: {
-        Availability
+        Availability,
+        ReviewList,
     }
 }
 </script>
