@@ -7,7 +7,9 @@
             <div class="border-bottom pt-4 d-none d-md-block" v-for="(review, index) in reviews" :key="index">
                 <div class="row">
                     <div class="col-md-6">Henry Abayan</div>
-                    <div class="col-md-6 d-flex justify-content-end">{{ review.rating }}</div>
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <star-rating :rating="review.rating" class="fa-lg" ></star-rating>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">{{ review.created_at | fromNow }}</div>
